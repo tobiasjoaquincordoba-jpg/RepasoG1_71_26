@@ -1,0 +1,55 @@
+@import url('reset.css');
+
+body{
+    background-color: steelblue;
+   min-height: 100dvh;  /*100% del viewport height */
+}
+header, footer{
+    width: 100%;
+    height: 10%;
+    padding:50px
+}
+main{
+    background-color: rgb(224, 224, 224);
+    height: 80%;
+}
+
+.banner, .descripcion, .nosotros, .productos{
+    width: 100%;
+    height: 25%;
+    border: solid 3px black;
+}
+
+.amarillo{
+    background-color: rgb(191, 250, 13);
+}
+
+
+.productos{
+    display: flex;
+height: 500px;
+    flex-direction: row;
+    justify-content:center; /* Centra los productos horizontalmente */
+    align-items: center; /* Centra los productos verticalmente */
+    gap: 5px; /** Espacio entre los productos */
+}
+
+.producto{
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto; */
+
+    flex: 1 0 25%; /* Equivalente a las tres propiedades anteriores */
+    height: 100%;
+    background-color: orange;
+    border: solid 3px black;
+    padding: 5px;
+    ;
+}
+
+
+.foto{
+    height: 60%;
+    width: 100%;
+    background-color: white;
+}
